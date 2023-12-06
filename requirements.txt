@@ -11,4 +11,3 @@ nltk==3.8.1
 Sastrawi
 wordcloud
 opencv-python
-cv2
