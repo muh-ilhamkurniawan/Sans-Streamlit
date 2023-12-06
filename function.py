@@ -20,6 +20,23 @@ nltk.data.path.append(punkt_path)
 
 # Download Punkt resource if not already downloaded
 nltk.download('punkt', quiet=True)
+def read_lexicon_csv(file_path, key_column, value_column):
+    lexicon_positive = dict()
+    
+    # Membaca file CSV ke dalam DataFrame
+    df_info = pd.read_csv(file_path, sep=',')
+
+    # Iterasi melalui setiap baris dalam DataFrame dan menambahkannya ke dalam kamus
+    for index, row in df_info.iterrows():
+        lexicon_positive[row[key_column]] = int(row[value_column])
+
+    return lexicon_positive
+
+# Contoh pemanggilan fungsi
+lexicon_positive = read_lexicon_csv('lexicon_positive.csv', 'key', 'value')
+
+# Contoh pemanggilan fungsi
+lexicon_negative = read_lexicon_csv('lexicon_negative.csv', 'key', 'value')
 
 # membuat functions untuk preprocessing text
 
@@ -45,12 +62,23 @@ def tokenizingText(text):
     text = tokenizer.tokenize(text)
     return text
 
-def filteringText(text):
-    factory = StopWordRemoverFactory()
-    stopword_remover = factory.create_stop_word_remover()
+# def filteringText(text):
+#     factory = StopWordRemoverFactory()
+#     stopword_remover = factory.create_stop_word_remover()
 
-    text = [stopword_remover.remove(word) for word in text]
-    return text
+#     text = [stopword_remover.remove(word) for word in text]
+#     return text
+
+def filteringText(text, lexicon_negative, lexicon_positive):
+    # Menggunakan set untuk operasi lookup yang lebih efisien
+    lexicon_negative_set = set(lexicon_negative)
+    lexicon_positive_set = set(lexicon_positive)
+
+    # Mengecek apakah setiap kata dalam teks ada di dalam lexicon_negative_set dan lexicon_positive_set
+    filtered_text = [word for word in text if word in lexicon_positive_set or word in lexicon_negative_set]
+
+    return filtered_text
+
 
 def stemmingText(text): # Pengurangan suatu kata menjadi kata dasar yang berimbuhan pada akhiran dan awalan atau pada akar kata
     factory = StemmerFactory()
@@ -77,9 +105,9 @@ def text_preprocessing_process(text):
     text = cleaningText(text)
     text = casefoldingText(text)
     text = tokenizingText(text)
-    text = filteringText(text)
     text = stemmingText(text)
     text = convertToSlangword(text)
+    text = filteringText(text, lexicon_negative, lexicon_positive)
     return text
 
 # Memuat data positif dan negatif leksikon

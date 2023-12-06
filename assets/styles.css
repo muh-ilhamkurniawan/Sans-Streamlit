@@ -4,25 +4,43 @@
 .navbar {
     position: fixed;
     width: 100%;
-    z-index: 99999999999999999999;
+    z-index: 97;
     left: 0rem;
     top: 0rem;
     height: 55px;
+    align-items: center;
+    flex-wrap: wrap;
     display: flex; /* Membuat navbar menjadi flex container */
-    justify-content: space-between; /* Menyebar elemen-elemen secara merata */
+    justify-content: flex-end; /* Menyebar elemen-elemen secara merata */
     background-color: #bbecd4;
+
+    
+}
+.logo {
+    position: fixed;
+    z-index: 99;
+    left: 4rem;
+    top: 0rem;
+    height: 25px;
+    font-style: italic;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    align-items: center;
+    flex-wrap: wrap;
+    display: flex; /* Membuat navbar menjadi flex container */
+    justify-content: flex-start;
 }
 
 .navlist {
     list-style-type: none;
-    display: flex;
+    display: inline-block;
     margin: 0;
     padding: 0;
+    margin-right: 4rem;
 }
 
 .navitem {
-    display: block;
-    color: #034832 !important;
+    display: inline-block;
+    color: black !important;
     text-align: center;
     padding: 20px 20px;
     text-decoration: none !important;
@@ -83,7 +101,7 @@
     visibility: hidden;
     position: fixed;
     border-radius: 9px;
-    background-color: #333;
+    background-color: #bbecd4;
     min-width: 160px;
     overflow: auto;
     right: 0.3rem;
@@ -99,14 +117,15 @@
 }
 
 .dropbtn:hover {
-    background-color: rgba(221, 221, 221, 0.233);
-    background: rgba(221, 221, 221, 0.233);
+    background-color: #bbecd4;
+    background: #bbecd4;
 }
 
 .dropdown a:hover {
-    background-color: rgba(221, 221, 221, 0.233);
+    background-color: #bbecd4;
 }
 
 iframe {
     height: 0rem;
+    flex-direction: column;
 }

@@ -20,6 +20,8 @@ import csv
 def load_view():    
     st.title('Cek Review')
     model = load_model('model.h5')
+    # Load data yang digunakan saat melatih model (sebagai contoh)
+    train_data = pd.read_csv('review_capcut.csv')
     st.header ('Prediksi Ulasan')
     # Contoh teks baru yang ingin diprediksi
     new_text = st.text_area("Masukkan teks yang ingin diprediksi:")
@@ -30,22 +32,21 @@ def load_view():
         if not new_text:
             st.error("Ulasan diperlukan. Silakan masukkan ulasan yang ingin diprediksi")
         else:
-            # Load data yang digunakan saat melatih model (sebagai contoh)
-            # Gantilah path dan nama file dengan data yang Anda gunakan saat melatih model
-            train_data = pd.read_csv('ML2.csv')
+            # Preprocessing teks baru menggunakan fungsi text_preprocessing_process
+            processed_text = text_preprocessing_process(new_text)
 
-            # Preprocessing teks baru
             # Tokenisasi
             tokenizer = Tokenizer(num_words=5000, oov_token='<OOV>')
-            tokenizer.fit_on_texts(train_data['content'])  # Menggunakan teks yang digunakan saat melatih model
+            tokenizer.fit_on_texts(train_data['clean_teks'])  # Menggunakan teks yang digunakan saat melatih model
 
             # Sequencing dan padding
-            new_text_seq = tokenizer.texts_to_sequences([new_text])
             max_len = 100  # Sesuaikan dengan panjang yang digunakan saat melatih model
+            new_text_seq = tokenizer.texts_to_sequences([processed_text])
             new_text_padded = pad_sequences(new_text_seq, maxlen=max_len, padding='post', truncating='post')
 
             # Prediksi probabilitas untuk setiap kelas
             predicted_probabilities = model.predict(new_text_padded)[0]
+
 
             # Mengambil indeks kelas dengan probabilitas tertinggi
             predicted_label = np.argmax(predicted_probabilities)
@@ -62,5 +63,4 @@ def load_view():
             polarity_score, polarity = sentiment_analysis_lexicon_indonesia(clean_text)
 
             # Menampilkan hasil analisis sentimen
-            st.write(f'Polaritas Skor: {polarity_score}')
-            st.write(f'Polaritas: {polarity}')
+            st.write(f'Prediksi Sentimen Menggunakan Polaritas: ({polarity_score})  {polarity}')

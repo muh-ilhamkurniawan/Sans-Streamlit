@@ -1,6 +1,6 @@
 import streamlit as st
 import utils as utl
-from views import home,about,fitur,options,configuration,info_tiktok,cek_review,cek_aplikasi
+from views import home,about,options,configuration,info_tiktok,cek_review,cek_aplikasi
 # Find more emojis here: https://www.webfx.com/tools/emoji-cheat-sheet/
 st.set_page_config(page_title="SansAPK", page_icon=":tada:", layout="wide")
 st.set_option('deprecation.showPyplotGlobalUse', False)
@@ -9,7 +9,7 @@ utl.navbar_component()
 page_bg_img = f"""
 <style>
 [data-testid="stAppViewContainer"] > .main {{
-background-color: #bbecd4;
+background-color: #ffff;
 background-position: top left;
 background-repeat: no-repeat;
 background-attachment: local;
@@ -44,8 +44,6 @@ def navigation():
         home.load_view()
     elif route == "about":
         about.load_view()
-    elif route == "fitur":
-        fitur.load_view()
     elif route == "info tiktok":
         info_tiktok.load_view()
     elif route == "cek review":
