@@ -19,11 +19,11 @@ import csv
 st.title("Sentimen Analisis Play Store Reviews")
 #navigasi sidebar
 selected = option_menu(
-        menu_title= None, 
+        menu_title=None, 
         options=["Info TikTok","Cek Review", "Cek Review Lexicon","Cek Aplikasi", "About"], 
         icons=['house', 'gear', 'gear', 'gear', 'gear'], 
         menu_icon="cast", 
-        orientation = "horizontal",
+        orientation="horizontal",
         default_index=0
 )
 if (selected == "Info TikTok"):
@@ -208,7 +208,7 @@ if (selected == "Cek Review"):
         else:
             # Load data yang digunakan saat melatih model (sebagai contoh)
             # Gantilah path dan nama file dengan data yang Anda gunakan saat melatih model
-            train_data = pd.read_csv('ML2.csv')
+            train_data = pd.read_csv('ML3.csv')
 
             # Preprocessing teks baru
             # Tokenisasi
@@ -227,7 +227,7 @@ if (selected == "Cek Review"):
             predicted_label = np.argmax(predicted_probabilities)
 
             # Mengubah label numerik menjadi label asli
-            label_mapping = {0: 'negative', 1: 'neutral', 2: 'positive'}
+            label_mapping = {'negative': 0, 'neutral': 1, 'positive': 2}
             predicted_class = label_mapping[predicted_label]
 
             # Menampilkan hasil prediksi
