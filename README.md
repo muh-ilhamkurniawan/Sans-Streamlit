@@ -13,4 +13,4 @@ Merupakan aplikasi Sentimen Analisis TikTok menggunakan Model LSTM berdasarkan r
 2. Bisa juga di akses melalui streamlit share menggunakan link : 
 
 ### Link Youtube :
--
+https://youtu.be/EeepkUlLSx4?si=vj5bL8_OpQh2lUBG
