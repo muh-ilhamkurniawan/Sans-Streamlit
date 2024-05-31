@@ -15,9 +15,27 @@
 |Fathur Rahmansyah Maulana Muhammad|Wahyu Heriyanto|Universitas Pembangunan Nasional “Veteran” Jawa Timur|
 
 
-## Cara Pengaksesan
-1. Masukkan kode 'streamlit run main.py' pada direktori folder ini
-2. Bisa juga di akses melalui streamlit share menggunakan link : 
+## Langkah Instalasi
+
+1.  Clone repository ke local machine anda menggunakan perintah git:
+
+    ```bash
+    git clone https://https://github.com/muh-ilhamkurniawan/Sans-Streamlit.git
+    cd Sans-Streamlit
+    ```
+
+2.  Install Library Python
+
+    Informasi library yang dibutuhkan untuk menjalankan aplikasi terdapat pada file `requirements.txt`
+    ```bash
+    pip install -r requirements.txt
+    ```
+
+3.  Jalankan Program
+    ```bash
+    streamlit run main.py
+    ```
+
 
 ## Link Youtube :
 https://youtu.be/EeepkUlLSx4?si=vj5bL8_OpQh2lUBG
