@@ -1,4 +1,7 @@
 # <p align="center">SANS-Streamlit</p>
+<p align="center" >
+    <img width="500" src="/dokumentasi/logo.png" alt="Sans Logo">
+</p>
 
 ## <p align="center">"Sistem Informasi Sentimen Analisis"</p>
 
@@ -11,7 +14,7 @@
 
 |Nama|Universitas|
 |-----|-----|
-|Achmad Hafizh Choirul|Universitas PGRI ADI BUANA SURABAYA|
+|Achmad Hafizh Choirul|Universitas PGRI Adi Buana Surabaya|
 |Oktavia Fauzaturroisiyah|Universitas Pembangunan Nasional “Veteran” Jawa Timur|
 |Muhammad Ilham Kurniawan|Universitas Jenderal Soedirman|
 |Mohamad Fajar|Universitas Ivet Semarang|
