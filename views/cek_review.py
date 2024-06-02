@@ -56,11 +56,12 @@ def load_view():
             predicted_class = label_mapping[predicted_label]
 
             # Menampilkan hasil prediksi
-            st.write(f'Prediksi Sentimen Menggunakan Model: {predicted_class}')
+            # st.write(f'Prediksi Sentimen Menggunakan Model: {predicted_class}')
 
             clean_text = text_preprocessing_process(new_text)
             # Melakukan analisis sentimen menggunakan fungsi yang telah Anda definisikan
             polarity_score, polarity = sentiment_analysis_lexicon_indonesia(clean_text)
 
             # Menampilkan hasil analisis sentimen
-            st.write(f'Prediksi Sentimen Menggunakan Polaritas: ({polarity_score})  {polarity}')
+            # st.write(f'Prediksi Sentimen Menggunakan Polaritas: ({polarity_score})  {polarity}')
+            st.write(f'Prediksi Sentimen : ({polarity_score})  {polarity}')

@@ -1,6 +1,6 @@
 # <p align="center">SANS-Streamlit</p>
 <p align="center" >
-    <img width="500" src="/dokumentasi/logo.png" alt="Sans Logo">
+    <img width="300" src="/dokumentasi/logo.png" alt="Sans Logo">
 </p>
 
 ## <p align="center">"Sistem Informasi Sentimen Analisis"</p>
