@@ -1,6 +1,6 @@
 # <p align="center">SANS-Streamlit</p>
 <p align="center" >
-    <img width="300" src="/dokumentasi/Logo.png" alt="Sans Logo">
+    <img width="300" src="/dokumentasi/logo.png" alt="Sans Logo">
 </p>
 
 ## <p align="center">"Sistem Informasi Sentimen Analisis"</p>
@@ -9,6 +9,15 @@
 
 <p>Merupakan aplikasi Sentimen Analisis TikTok menggunakan Model LSTM berdasarkan review di Playstore. Dengan aplikasi ini pengguna dapat mengecek apakah sebuah review memiliki sentimen positif, netral, mmaupun negatif. Aplikasi ini juga dapat melihat informasi sentimen analisis dari aplikasi TikTok serta aplikasi lainnya di Playtore.</p>
 <p>Aplikasi ini merupakan hasil dari Capstone Project Kelompok 4 Atlas dari kegiatan Studi Independen Bersertifikat MSIB Kampus Merdeka di Orbit Future Academy Batch 5</p>
+
+## Tampilan Sistem
+
+<div align="center">
+    <img width="300" height="150" src="/dokumentasi/Home.png" alt="SANS Home">
+    <img width="300" height="150" src="/dokumentasi/CekAplikasi.png" alt="SANS CekAplikasi">
+    <img width="300" height="150" src="/dokumentasi/CekReview.png" alt="SANS CekReview.">
+    <img width="300" height="150" src="/dokumentasi/About.png" alt="SANS About">
+</div>
 
 ## Anggota Kelompok
 
