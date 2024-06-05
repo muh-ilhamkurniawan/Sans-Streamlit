@@ -5,11 +5,11 @@ import cv2
 def load_view():    
     st.markdown("<h1 style='text-align: center; margin-bottom: 30px; color: #034832;'>Meet Our Team</h1>", unsafe_allow_html=True)
 
-    imgfajar = cv2.imread('fajar.jpg')
-    imgfathur = cv2.imread('fathur.jpg')
-    imgilham = cv2.imread('ilham.jpg')
-    imghafiz = cv2.imread('hafiz.jpg')
-    imgtata = cv2.imread('tata.jpg')
+    imgfajar = cv2.imread('assets/images/fajar.jpg')
+    imgfathur = cv2.imread('assets/images/fathur.jpg')
+    imgilham = cv2.imread('assets/images/ilham.jpg')
+    imghafiz = cv2.imread('assets/images/hafiz.jpg')
+    imgtata = cv2.imread('assets/images/tata.jpg')
 
     col1, col2, col3, col4, col5 = st.columns([1,1,1,1,1])
 
