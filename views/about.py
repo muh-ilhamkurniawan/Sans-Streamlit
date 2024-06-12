@@ -38,7 +38,7 @@ def load_view():
 
     col6, col7, col8, col9, col10 = st.columns([1,1,1,1,1])
         
-    col6.markdown("<p style='text-align: center;  padding: 12px;'>Universitas PGRI ADI BUANA SURABAYA</p>", unsafe_allow_html=True)
+    col6.markdown("<p style='text-align: center;  padding: 12px;'>Universitas PGRI Adi Buana Surabaya</p>", unsafe_allow_html=True)
 
     col7.markdown("<p style='text-align: center;  padding: 12px;'>Universitas Pembangunan Nasional “Veteran” Jawa Timur</p>", unsafe_allow_html=True)
 
