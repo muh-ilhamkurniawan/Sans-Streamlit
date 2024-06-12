@@ -13,7 +13,7 @@ def load_view():
         col1.write("[Learn More >](https://github.com/muh-ilhamkurniawan/Sans-Streamlit)")
         
         # Path ke file gambar lokal
-        local_image_path = "logo.png"
+        local_image_path = "assets/images/logo.png"
 
         # Menampilkan gambar dari file lokal
         col5.image(local_image_path, width=200, output_format='auto', use_column_width=True)

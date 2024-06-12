@@ -30,7 +30,7 @@ def load_view():
 
     if button1.button("Lihat Review Lama"):
         # Implementasi lihat reviews lama
-        df_info = pd.read_csv('info_tiktok.csv', sep=',')
+        df_info = pd.read_csv('data/info_tiktok.csv', sep=',')
         df_reviews = pd.read_csv('tiktok_review.csv', sep=',')
 
         # Menampilkan waktu di Streamlit
@@ -126,7 +126,7 @@ def load_view():
         # Menambahkan baris ke DataFrame menggunakan loc
         df_app.loc['time'] = new_row
 
-        df_app.to_csv('info_tiktok.csv', index_label='key')
+        df_app.to_csv('data/info_tiktok.csv', index_label='key')
 
         # Menampilkan hasil review
         st.subheader("Daftar Review:")
