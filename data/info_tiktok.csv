@@ -25,11 +25,11 @@ descriptionHTML,"Temukan komunitas dan bagikan konten inspiratif dan edukatif se
 summary,"Bergabung di TikTok, komunitas global video, musik dan live streaming terbaik!"
 installs,500.000.000+
 minInstalls,500000000
-realInstalls,846194397
-score,4.1405005
-ratings,19482572
-reviews,3447089
-histogram,"[2694472, 704162, 1011378, 1832107, 13240442]"
+realInstalls,847211771
+score,4.1449842
+ratings,19501806
+reviews,3450755
+histogram,"[2678230, 701679, 1011171, 1834046, 13276674]"
 price,0
 free,True
 currency,IDR
@@ -50,7 +50,7 @@ Singapore
 privacyPolicy,https://www.tiktok.com/legal/privacy-policy
 genre,Pemutar & Editor Video
 genreId,VIDEO_PLAYERS
-categories,"[{'name': 'Pemutar & Editor Video', 'id': 'VIDEO_PLAYERS'}]"
+categories,"[{'name': 'Strategi', 'id': 'GAME_STRATEGY'}, {'name': 'Taktik', 'id': None}, {'name': 'Santai', 'id': 'GAME_CASUAL'}, {'name': 'Multiplayer', 'id': None}, {'name': 'Multiplayer kompetitif', 'id': None}, {'name': 'Single player', 'id': None}, {'name': 'Bergaya unik', 'id': None}]"
 icon,https://play-lh.googleusercontent.com/Ui_-OW6UJI147ySDX9guWWDiCPSq1vtxoC-xG17BU2FpU0Fi6qkWwuLdpddmT9fqrA
 headerImage,https://play-lh.googleusercontent.com/2wUbbUojGjGfGjt1pqUr_l-t4PTG4tMTgkcUKYXk50ljXMmTVJczsINN9-GUt_DfGdk
 screenshots,"['https://play-lh.googleusercontent.com/Dhn_hdR7QOjuIDFL7zfUNVIXepQuIqb4KAqGb24mWCew-eIchN7QDFjUD1zyu6QRiJ_9', 'https://play-lh.googleusercontent.com/QANakbONoH46-rltTzGaBrdm2RT5C1VVfGepw8OLGAJTf_ehx5S2ZVFOLaslAoGayuA', 'https://play-lh.googleusercontent.com/Km-SNVb88scdXlElJXPBcYXGgnv5WiQnbY1lu_cB5KmMtBQpO8BcQ_CIHXLnYOvi9w', 'https://play-lh.googleusercontent.com/CANL5DbDFo5DCRoMYG8UypCEO_iurTzYtPSanNWMR-444TASmjdIjGsiPgslN_kox5Y', 'https://play-lh.googleusercontent.com/32C1A2wl5CCEBiZtV7BzSDSHVewCzFDcqzznDi3UwCjypmpIFEvRKr3aL5IA4VC0isMJ', 'https://play-lh.googleusercontent.com/a7yI7ZUM45qaFjopUmybJ06jxzE2c5xMxAE4lFaz_2W65tJ2bhSREyEHiMgWQ4nuEgs', 'https://play-lh.googleusercontent.com/_qQfrmVaHIUZJEeF6lcwO59lE_frWu8IZDy0Egq7eH8aad9uLSibDoCIYcu29pbpYy0', 'https://play-lh.googleusercontent.com/Iq_ck5cxyDS-oCJkN_b_x6_xAXc5Z1z18wMgOyGXCC85ytFCYaYltb54MIydRmWOUj4', 'https://play-lh.googleusercontent.com/La3UaqWMSYOBTbzK32k18MR54oi8GlShSs-oVrlj4USiHKvahUKH9YrUN9ZYpX3dSm2n', 'https://play-lh.googleusercontent.com/pnde5Cbpyqpeti1N14mvRjcrwcLFlmJaTqQw-Z5tBR-1IpD-niKS--KeWCJgOWpfhD4', 'https://play-lh.googleusercontent.com/bcGy42ZRZxMgBP8btL3NKOQyJCSewLCQlOgR39_4FAnwxSS-wLAUsCzYJIhYJDNaBAYX', 'https://play-lh.googleusercontent.com/o1klZTTsokPd7BqvMowk_C5eX2kjkNhq8WYxvx1QjFs17ekBvNWJkix7IpjohK3gxBI', 'https://play-lh.googleusercontent.com/xeGOCwKWczk8xw6XGr7ox-G3hEv0x8gMCLormMeB51IFKWkoN37iznPO_7K7sWKuYYck', 'https://play-lh.googleusercontent.com/yTkukufaEGiPf3Mcoag11YN58_Vj2C69lqlI6VznUyzSemGhQ8CgNNScnMuCTqS-VA', 'https://play-lh.googleusercontent.com/2IojIZDYnCCkAlMzhgq1v6tE_bg8Ww-8h-e5O_5YCONU49ZySx43N10nRQm24e9Kda4']"
@@ -66,4 +66,4 @@ version,35.1.3
 comments,[]
 appId,com.ss.android.ugc.trill
 url,https://play.google.com/store/apps/details?id=com.ss.android.ugc.trill&hl=id&gl=id
-time,2024-06-12 21:23:23.511034
+time,2024-06-15 20:48:34.402653

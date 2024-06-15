@@ -1,18 +1,11 @@
 import re
 import pandas as pd
 import string
-from nltk.tokenize import word_tokenize
-from nltk.corpus import stopwords
 from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
-import csv
 from wordcloud import WordCloud
-import matplotlib.pyplot as plt
-from PIL import Image
 import os
 import nltk
 from nltk.tokenize import RegexpTokenizer
-from Sastrawi.StopWordRemover.StopWordRemoverFactory import StopWordRemoverFactory
-from Sastrawi.Stemmer.StemmerFactory import StemmerFactory
 
 # Path to the directory containing punkt folder (assuming it's in the same directory as function.py)
 punkt_path = os.path.join(os.path.dirname(__file__), 'punkt')
@@ -33,10 +26,10 @@ def read_lexicon_csv(file_path, key_column, value_column):
     return lexicon_positive
 
 # Contoh pemanggilan fungsi
-lexicon_positive = read_lexicon_csv('lexicon_positive.csv', 'key', 'value')
+lexicon_positive = read_lexicon_csv('data/lexicon_positive.csv', 'key', 'value')
 
 # Contoh pemanggilan fungsi
-lexicon_negative = read_lexicon_csv('lexicon_negative.csv', 'key', 'value')
+lexicon_negative = read_lexicon_csv('data/lexicon_negative.csv', 'key', 'value')
 
 # membuat functions untuk preprocessing text
 

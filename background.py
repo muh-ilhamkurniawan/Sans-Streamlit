@@ -1,11 +1,10 @@
-import base64
 import streamlit as st
 import plotly.express as px
 
 df = px.data.iris()
 
 
-page_bg_img = f"""
+page_bg_img = """
 <style>
 [data-testid="stAppViewContainer"] > .main {{
 background-color: #a6c980;
