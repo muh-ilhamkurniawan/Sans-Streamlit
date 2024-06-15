@@ -87,7 +87,7 @@ def stemmingText(text): # Pengurangan suatu kata menjadi kata dasar yang berimbu
     return text
 
 def convertToSlangword(text): # Merubah kata tidak baku menjadi kata baku
-    kamusSlang = eval(open("slangwords.txt").read())
+    kamusSlang = eval(open("data/slangwords.txt").read())
     pattern = re.compile(r'\b( ' + '|'.join (kamusSlang.keys())+r')\b')
     content = []
     for kata in text:
@@ -127,10 +127,10 @@ def read_lexicon_csv(file_path, key_column, value_column):
     return lexicon_positive
 
 # Contoh pemanggilan fungsi
-lexicon_positive = read_lexicon_csv('lexicon_positive.csv', 'key', 'value')
+lexicon_positive = read_lexicon_csv('data/lexicon_positive.csv', 'key', 'value')
 
 # Contoh pemanggilan fungsi
-lexicon_negative = read_lexicon_csv('lexicon_negative.csv', 'key', 'value')
+lexicon_negative = read_lexicon_csv('data/lexicon_negative.csv', 'key', 'value')
 
 # Fungsi untuk menentukan polaritas sentimen tweet
 def sentiment_analysis_lexicon_indonesia(text):
